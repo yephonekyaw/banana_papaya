@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Papaya</title>
+    <script src="./js/my_script.js"></script>
+    <link rel="stylesheet" href="./css/my_style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <span><img src="./images/avatar.png" alt=""></span>
+            <div class="text">Banana Papaya Experiment</div>
+        </div>
+
+        <form action="" method="post">
+            <div class="collector">
+                <div class="field">
+                    <span><img src="./images/banana.png" alt=""></span>
+                    <input class="" onchange="check()" id="b1" type="text" placeholder="BB 1">
+                </div>
+    
+                <div class="field">
+                    <span><img src="./images/banana.png" alt=""></span>
+                    <input class="" onchange="check()" id="b2" type="text" placeholder="BB 2">
+                </div>
+            </div>
+
+            <div class="collector">
+                <div class="field">
+                    <span><img src="./images/papaya.png" alt=""></span>
+                    <input class="" onchange="check()" id="p1" type="text" placeholder="PP 1">
+                </div>
+    
+                <div class="field">
+                    <span><img src="./images/papaya.png" alt=""></span>
+                    <input class="" onchange="check()" id="p2" type="text" placeholder="PP 2">
+                </div>
+            </div>
+
+            <div class="collector">
+                <div class="field">
+                    <span><img src="./images/thermometer.png" alt=""></span>
+                    <input class="" onchange="check()" id="t1" type="text" placeholder="°K">
+                </div>
+    
+                <div class="field">
+                    <span><img src="./images/thermometer.png" alt=""></span>
+                    <input class="" onchange="check()" id="t2" type="text" placeholder="°K">
+                </div>
+            </div>
+        </form>
+
+        <div class="btns">
+            <button onclick="change_temp()" id="k_btn" class="btn-selected">°K</button>
+            <button onclick="change_temp()" id="c_btn" class="btn">°C</button>
+            <button onclick="change_temp()" id="f_btn" class="btn">°F</button>
+        </div>
+        <button class="clr" onclick="clr_all()" id="clr_btn">X</button>
+    </div>
+
+</body>
+</html>
